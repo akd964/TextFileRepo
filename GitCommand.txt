@@ -1,0 +1,75 @@
+Origin:Name of the repository
+master:branch
+
+
+Set Up Git:
+git config --global user.name "Your Name"
+git config --global user.email "youremail@domain.com"
+
+other commands
+
+if want to send any file from local repo:
+git init
+git status
+git add(if add all files:git add -A)
+git commit
+git log
+git remote add origin https://github.com/akd964/HelloWorld.git
+git remote -v
+git branch -a
+git remote rm destination/origin
+git push -u origin master
+
+
+Chnanges in Existing project:
+
+git clone (url)
+git add (file names)
+git commit -m "(committed message)
+git pull origin master(To check whether any other member changes the code)
+git push -u origin master
+
+
+
+GIT version:
+git --version
+Check the configuration:
+git config --list
+
+Stop tracking Git project:
+rm -rf .git
+
+To  ignore a file:
+1.Create one gitignore file:
+touch .gitignore
+2.specify file names in .gitignore
+
+
+Remove file from staging area:(after git add file_name)
+git reset file_name
+git status
+
+
+To check the difference:
+git diff
+
+Switch to branch:
+1.check the current branch:
+git branch(it will show green one)
+2.Create new branch:
+git branch new_branchName
+3.Swith to new branch:
+git checkout new_branchName
+4.git push -u origin new_branchName
+5.git branch -a
+6.switch to master to commit in master
+git checkout master
+7.git pull origin master
+8.git branch --merged
+9.git marge new_branchName
+10.git push origin master
+11.Delete the new branch
+git branch --merged
+12.git branch -d new_branchName
+13.git branch -a
+14.git push origin --delete new_branchName
